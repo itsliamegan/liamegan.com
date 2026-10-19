@@ -1,6 +1,11 @@
-name = "website"
+name = "liamegan"
 compatibility_date = "2026-10-19"
+workers_dev = false
 preview_urls = false
 
 [assets]
 directory = "public"
+
+[[routes]]
+pattern = "liamegan.com"
+custom_domain = true
