@@ -3,23 +3,27 @@
 }
 
 body,
-h1,
-h2,
-h3,
-h4,
+h1, h2, h3, h4,
 p,
+ul, ol,
 figure,
 blockquote,
-ul,
-ol {
+pre {
 	margin: 0;
 	padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4 {
-	font-size: 1rem;
+ul, ol {
+	list-style: none;
+}
+
+h1, h2, h3, h4 {
+	font-size: inherit;
 	font-weight: normal;
+}
+
+input, select, option, button, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
 }

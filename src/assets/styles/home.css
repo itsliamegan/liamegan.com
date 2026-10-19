@@ -1,68 +1,46 @@
-section > header {
-	margin-bottom: 0.75em;
-	border-bottom: 0.075em solid #333;
+.home-section {
+	+ & {
+		margin-block-start: var(--space-9);
+	}
 }
 
-section > header > h2 {
-	font-size: 0.875rem;
+.home-section-header {
+	display: flex;
+	align-items: center;
+
+	margin-block-end: var(--space-6);
+
+	&::after {
+		content: "";
+		flex: 1;
+		height: var(--rule);
+		margin-inline-start: var(--space-5);
+
+		background-color: var(--color-rule);
+	}
+}
+
+.home-section-title {
+	font-size: var(--type-1);
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
-section > ul {
-	list-style: none;
-}
-
-section > ul > li {
+.home-list-item {
 	display: flex;
-}
+	flex-wrap: wrap;
+	align-items: baseline;
 
-section > ul > li > span + span {
-	margin-left: auto;
-}
-
-section > ol > li {
-	display: flex;
-	flex-direction: column;
-}
-
-section > ol > li + li {
-	margin-top: 0.75em;
-}
-
-section > ol > li > a {
-	color: inherit;
-	text-decoration: none;
-}
-
-section > ol > li > a:hover {
-	text-decoration: underline;
-}
-
-section > ol > li > a > .publication {
-	margin-left: 0.4em;
-	color: #666;
-	font-size: 0.75rem;
-}
-
-section > ol > li > time {
-	font-size: 0.875rem;
-}
-
-@media screen and (min-width: 800px) {
-	section > ol > li {
-		flex-direction: row;
-	}
-
-	section > ol > li + li {
-		margin-top: 0.25em;
-	}
-
-	section > ol > li > time {
-		margin-left: auto;
-		font-size: 1rem;
+	+ & {
+		margin-block-start: var(--space-3);
 	}
 }
 
-@media screen and (min-width: 1200px) {
+.home-list-title {
+	flex: 1;
+}
+
+.home-list-meta {
+	font-size: var(--type-3);
+	color: var(--color-muted);
 }

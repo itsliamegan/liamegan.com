@@ -1,103 +1,74 @@
 @import "./prelude.css";
+@import "./theme.css";
 
-:root {
-	--color-bg: #fafafa;
-	--color-fg: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--color-bg: #0a0a0a;
-		--color-fg: #d4d4d4;
-	}
+html {
+	font-size: var(--font-size-root);
 }
 
 body {
-	width: 92.5vw;
-	margin: 0 auto;
-	padding: 1em 0.25em;
+	font-family: var(--font-stack-body);
+	font-size: var(--font-size-root);
+	line-height: var(--line-height-body);
 
-	font-family:
-		Helvetica Neue,
-		Helvetica,
-		Arial,
-		sans-serif;
-	font-size: 1.125rem;
-	line-height: 1.3;
-
-	background-color: var(--color-bg);
-	color: var(--color-fg);
+	background-color: var(--color-canvas);
+	color: var(--color-ink);
 }
 
-body > header {
+h1, h2, h3, h4 {
+	line-height: var(--line-height-heading);
+}
+
+a {
+	color: inherit;
+	text-decoration: underline;
+	text-decoration-color: var(--color-accent);
+
+	&:hover {
+		color: var(--color-accent);
+	}
+}
+
+#site-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 1em;
-	padding: 0.25em 0;
+	width: var(--page-width);
+	margin-inline: auto;
+	padding-block: var(--space-8);
 }
 
-body > header > p {
-	font-size: 1.15rem;
-	font-weight: 500;
-}
-
-body > header > p > a {
-	color: inherit;
-	text-decoration: none;
-}
-
-body > header > p > a:hover {
-	text-decoration: underline;
-}
-
-body > header > p > span#separator {
-	font-size: 0.875em;
-	font-weight: normal;
-	color: #666;
-}
-
-body > header > p > span#subdir {
-	font-size: 0.875em;
-	font-weight: normal;
-	color: #666;
-}
-
-body > header > nav > ul {
+#site-title {
 	display: flex;
-	justify-content: space-around;
-	gap: 1.5em;
-	padding: 0;
-	list-style: none;
-}
+	align-items: baseline;
 
-body > header > nav a {
-	font-size: 0.9rem;
-	color: #475f85;
-}
+	> a {
+		font-size: var(--type-4);
+		font-weight: 500;
+		text-decoration: none;
 
-body > header > nav a:hover {
-	text-decoration: underline;
-}
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 0.4em;
+			height: 0.4em;
+			margin-inline: var(--space-4);
+			vertical-align: middle;
 
-main {
-	display: flex;
-	flex-direction: column;
-	gap: 2em;
-}
+			background-color: var(--color-accent);
+		}
 
-@media screen and (min-width: 800px) {
-	body {
-		width: 65ch;
-		padding: 0.5em;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 
-		font-size: 1.25rem;
-		line-height: 1.4;
+	> .crumb {
+		font-size: var(--type-4);
+		color: var(--color-muted);
 	}
 }
 
-@media screen and (min-width: 1200px) {
-	body {
-		line-height: 1.5;
-	}
+#site-content {
+	width: var(--page-width);
+	margin-inline: auto;
 }

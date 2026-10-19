@@ -21,15 +21,14 @@
 		{{ sections["head"] }}
 	</head>
 	<body>
-		<header>
-			<p>
-				<a href="{{ urls.route("home") }}">
-					{{ site.item("info").field("title") }}
-				</a>
+		<header id="site-header">
+			<p id="site-title">
+				<a href="{{ urls.route("home") }}">{{ site.item("info").field("title") }}</a>
 				{{ sections["crumb"] }}
 			</p>
 		</header>
-		<main>
+
+		<main id="site-content">
 			{{ content }}
 		</main>
 	</body>

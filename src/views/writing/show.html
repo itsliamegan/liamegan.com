@@ -5,20 +5,19 @@
 {% endsection %}
 
 {% section "crumb" %}
-<span id="separator">/</span>
-<span id="subdir">Writing</span>
+<span class="crumb">Writing</span>
 {% endsection %}
 
-<article>
-	<header>
-		<h1>{{ item.field("title") }}</h1>
+<article class="article">
+	<header class="article-header">
+		<h1 class="article-title">{{ item.field("title") }}</h1>
 
 		{%- if item.field("subtitle") %}
-		<p class="subtitle">{{ item.field("subtitle") }}</p>
+		<p class="article-subtitle">{{ item.field("subtitle") }}</p>
 		{%- endif %}
 
 		{%- if item.field("preface") %}
-		<aside>
+		<aside class="article-preface">
 			{{ item.field("preface") }}
 		</aside>
 		{%- endif %}

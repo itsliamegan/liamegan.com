@@ -1,58 +1,58 @@
-article {
-	margin-top: 1em;
-}
-
-article > header > h1 {
+.article-title {
 	font-weight: bold;
-	font-size: 1.35rem;
+	font-size: var(--type-6);
 }
 
-article > header > .subtitle {
-	margin-top: 0;
+.article-subtitle {
+	margin-block-start: 0;
+
+	font-size: var(--type-5);
 	text-align: left;
-	font-size: 1.15rem;
 }
 
-article > header > aside {
+.article-preface {
+	margin-block-start: var(--space-4);
+
 	font-style: italic;
-	font-size: 0.875rem;
+	font-size: var(--type-3);
 }
 
-article > header > aside {
-	margin-top: 0.5em;
+.article {
+	h2, h3, h4 {
+		font-weight: bold;
+	}
+
+	p {
+		margin-block-start: var(--space-6);
+		text-align: justify;
+	}
+
+	sup {
+		font-size: var(--type-1);
+	}
+
+	* + h2 {
+		margin-block-start: var(--space-8);
+	}
 }
 
-article > h2 {
-	font-weight: bold;
-}
-
-article p {
-	text-align: justify;
-	margin-top: 0.75em;
-}
-
-article sup {
-	font-size: 0.75rem;
-}
-
-article > * + h2 {
-	margin-top: 1.25em;
-}
-
-.note-backlink {
-	font-size: 0.75em;
-}
-
-.footnotes {
-	list-style: none;
+.article > .footnotes {
 	margin-top: 2em;
 	font-size: 0.875em;
-}
 
-.footnotes li + li {
-	margin-top: 0.5em;
-}
+	ol {
+		list-style: decimal outside;
+	}
 
-.footnotes li > p {
-	display: inline;
+	li + li {
+		margin-block-start: var(--space-4);
+	}
+
+	li > p {
+		display: inline;
+	}
+
+	li > a {
+		font-size: var(--type-1);
+	}
 }
