@@ -9,3 +9,10 @@ python.uv_venv_auto = "create|source"
 [tasks]
 build = "eden build"
 serve = "eden serve"
+
+[tasks.install]
+run = ["npm ci", "uv sync --locked"]
+
+[tasks.deploy]
+depends = ["build"]
+run = "npx wrangler deploy"
