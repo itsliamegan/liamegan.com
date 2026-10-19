@@ -1,0 +1,28 @@
+{% layout "layouts/base" %}
+
+{% section "head" %}
+{{ assets.style("article") }}
+{% endsection %}
+
+{% section "crumb" %}
+<span id="separator">/</span>
+<span id="subdir">Writing</span>
+{% endsection %}
+
+<article>
+	<header>
+		<h1>{{ item.field("title") }}</h1>
+
+		{%- if item.field("subtitle") %}
+		<p class="subtitle">{{ item.field("subtitle") }}</p>
+		{%- endif %}
+
+		{%- if item.field("preface") %}
+		<aside>
+			{{ item.field("preface") }}
+		</aside>
+		{%- endif %}
+	</header>
+
+	{{ item.body }}
+</article>

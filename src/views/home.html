@@ -1,0 +1,54 @@
+{% layout "layouts/base" %}
+
+{% section "head" %}
+{{ assets.style("home") }}
+{% endsection %}
+
+<section>
+	<header>
+		<h2>About</h2>
+	</header>
+
+	{{ item.body }}
+</section>
+
+<section>
+	<header>
+		<h2>Writing</h2>
+	</header>
+
+	<ol>
+		{% for entry in site.collection("writing").concat(site.collection("publications")).sort("date").reverse() %}
+		{% if not entry.field("unlisted") %}
+		<li>
+			{% if entry.field("link") %}
+			<a href="{{ entry.field("link") }}">
+				{{ entry.field("title") }}
+			</a>
+			{% else %}
+			<a href="{{ urls.route("writing/show", entry) }}">
+				{{ entry.field("title") }}
+			</a>
+			{% endif %}
+			<time datetime="{{ entry.field("date") }}">{{ entry.field("date") | date("%B %-d, %Y") }}</time>
+		</li>
+		{% endif %}
+		{% endfor %}
+	</ol>
+</section>
+
+<section>
+	<header>
+		<h2>Contact</h2>
+	</header>
+	<ul>
+		<li>
+			<span>Email</span>
+			<span>{{ site.item("info").field("email") }}</span>
+		</li>
+		<li>
+			<span>Bluesky</span>
+			<span>{{ site.item("info").field("bluesky") }}</span>
+		</li>
+	</ul>
+</section>

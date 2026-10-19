@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<title>
+			{% if item.field("title") %}{{ item.field("title") }} - {% endif %}{{ site.item("info").field('title') }}
+		</title>
+
+		<meta property="og:title" content="{{ item.field("title") or site.item("info").field("title") }}">
+		<meta property="og:site_name" content="{{ site.item("info").field("title") }}">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="{{ urls.path(page.path, absolute=True) }}">
+		<meta property="og:image" content="{{ urls.path("favicon.png", absolute=True) }}">
+
+		<link rel="icon" type="image/png" href="{{ urls.path("favicon.png") }}">
+
+		{{ assets.style("main") }}
+
+		{{ sections["head"] }}
+	</head>
+	<body>
+		<header>
+			<p>
+				<a href="{{ urls.route("home") }}">
+					{{ site.item("info").field("title") }}
+				</a>
+				{{ sections["crumb"] }}
+			</p>
+		</header>
+		<main>
+			{{ content }}
+		</main>
+	</body>
+</html>

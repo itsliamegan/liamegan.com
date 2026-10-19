@@ -2,12 +2,14 @@ article {
 	margin-top: 1em;
 }
 
-article > header > h2 {
+article > header > h1 {
 	font-weight: bold;
 	font-size: 1.35rem;
 }
 
-article > header > h3 {
+article > header > .subtitle {
+	margin-top: 0;
+	text-align: left;
 	font-size: 1.15rem;
 }
 
@@ -20,7 +22,7 @@ article > header > aside {
 	margin-top: 0.5em;
 }
 
-article > section > h4 {
+article > h2 {
 	font-weight: bold;
 }
 
@@ -33,7 +35,7 @@ article sup {
 	font-size: 0.75rem;
 }
 
-article > * + section {
+article > * + h2 {
 	margin-top: 1.25em;
 }
 
@@ -41,12 +43,16 @@ article > * + section {
 	font-size: 0.75em;
 }
 
-#notes {
+.footnotes {
 	list-style: none;
 	margin-top: 2em;
 	font-size: 0.875em;
 }
 
-#notes > li + li {
+.footnotes li + li {
 	margin-top: 0.5em;
+}
+
+.footnotes li > p {
+	display: inline;
 }

@@ -1,8 +1,9 @@
+@import "./prelude.css";
+
 :root {
 	--color-bg: #fafafa;
-	--color-fg: #171717
+	--color-fg: #171717;
 }
-
 
 @media (prefers-color-scheme: dark) {
 	:root {
@@ -16,7 +17,11 @@ body {
 	margin: 0 auto;
 	padding: 1em 0.25em;
 
-	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family:
+		Helvetica Neue,
+		Helvetica,
+		Arial,
+		sans-serif;
 	font-size: 1.125rem;
 	line-height: 1.3;
 
@@ -32,27 +37,27 @@ body > header {
 	padding: 0.25em 0;
 }
 
-body > header > h1 {
+body > header > p {
 	font-size: 1.15rem;
 	font-weight: 500;
 }
 
-body > header > h1 > a {
+body > header > p > a {
 	color: inherit;
 	text-decoration: none;
 }
 
-body > header > h1 > a:hover {
+body > header > p > a:hover {
 	text-decoration: underline;
 }
 
-body > header > h1 > span#separator {
+body > header > p > span#separator {
 	font-size: 0.875em;
 	font-weight: normal;
 	color: #666;
 }
 
-body > header > h1 > span#subdir {
+body > header > p > span#subdir {
 	font-size: 0.875em;
 	font-weight: normal;
 	color: #666;

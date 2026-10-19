@@ -1,66 +1,27 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
++++
+title = "The Object of Genealogy"
+preface = "(Draft)"
++++
 
-		<title>The Object of Genealogy — Liam Egan</title>
+Criticism of Foucault's work often traces its shared argumentative lineage to
+the commentaries of Nancy Fraser, Jürgen Habermas, and Charles Taylor. Appearing
+after the publication and popularization of *Discipline and Punish*, these
+commentaries generally raise issues with Foucault's work by claiming that he
+does not provide enough reassurance, nor have the conceptual resources to argue,
+that the dominations he depicts are able to be transformed and thus escaped.
+Fraser and Taylor claim that he does not have a sufficient normative position
+from which to articulate his criticism (Fraser 1981; Taylor 1984). Habermas
+suggests more strongly that Foucault's work not only relies on a normative
+framework, but one which is specifically hidden in order to make its criticisms
+appear radical. While Taylor in particular relaxed his claims after the later
+publication of Foucault's lectures complicated the concepts developed in his
+monographs, much of the ensuing commentary has structured itself in relation to
+the questions these original interlocutors raised. Thus, in hoping to develop a
+novel understanding of Foucault's genealogical project, it is necessary to
+divorce contemporary commentaries from their framing in response to normative
+critiques. Instead, I will attempt to understand what generalized
+characterization of genealogy these commentaries can offer.
 
-		<meta property="og:title" content="The Object of Genealogy">
-		<meta property="og:site_name" content="Liam Egan">
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://liamegan.com/drafts/the-object-of-genealogy">
-		<meta property="og:image" content="https://liamegan.com/favicon.png">
-
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:title" content="The Marxism of Crisis, Today">
-		<meta name="twitter:image" content="https://liamegan.com/favicon.png">
-
-		<link rel="icon" type="image/png" href="https://liamegan.com/favicon.png">
-
-		<link rel="stylesheet" href="/static/prelude.css">
-		<link rel="stylesheet" href="/static/main.css">
-		<link rel="stylesheet" href="/static/article.css">
-	</head>
-	<body>
-		<header>
-			<h1><a href="https://liamegan.com/">Liam Egan</a> <span id="separator">/</span> <span id="subdir">Writing</span></h1>
-		</header>
-		<main>
-			<article>
-				<header>
-					<h2>The Object of Genealogy</h2>
-					<aside>(Draft)</aside>
-					<p>
-						Criticism of Foucault's work often traces its shared
-						argumentative lineage to the commentaries of Nancy
-						Fraser, Jürgen Habermas, and Charles Taylor. Appearing
-						after the publication and popularization of *Discipline
-						and Punish*, these commentaries generally raise issues
-						with Foucault's work by claiming that he does not
-						provide enough reassurance, nor have the conceptual
-						resources to argue, that the dominations he depicts are
-						able to be transformed and thus escaped. Fraser and
-						Taylor claim that he does not have a sufficient
-						normative position from which to articulate his
-						criticism (Fraser 1981; Taylor 1984). Habermas suggests
-						more strongly that Foucault's work not only relies on a
-						normative framework, but one which is specifically
-						hidden in order to make its criticisms appear radical.
-						While Taylor in particular relaxed his claims after the
-						later publication of Foucault's lectures complicated the
-						concepts developed in his monographs, much of the
-						ensuing commentary has structured itself in relation to
-						the questions these original interlocutors raised. Thus,
-						in hoping to develop a novel understanding of Foucault's
-						genealogical project, it is necessary to divorce
-						contemporary commentaries from their framing in response
-						to normative critiques. Instead, I will attempt to
-						understand what generalized characterization of
-						genealogy these commentaries can offer.
-					</p>
-
-<p>
 In service of such a goal, I will specifically seek to understand genealogy as
 an abstract method of knowledge production about a corresponding abstract
 object, i.e. a set of structural practices for producing knowledge about an
@@ -73,9 +34,7 @@ methodology within this structure to correspond to and support it. Thus, in
 examining commentary on Foucault's work, instead of reading it in response to
 normative critique, I hope to understand it as developing genealogy as an
 abstract methodology of knowledge production.
-</p>
 
-<p>
 Commentators have identified many aspects of Foucault's genealogical work, but I
 will be focusing on the two most prominent. In the first place, commentators
 like Martin Saar and Raymond Geuss have noted that Foucault's investigations
@@ -93,9 +52,7 @@ rather to do so in order to open them up to continual critique (Allen 2018;
 Koopman 2013). In particular, they go as far as to say that this kind of
 critical attitude (a notion which they mobilize from Foucault's later work)
 forms the basis for freedom or critique as such (Allen 2015, 2016).
-</p>
 
-<p>
 The former interpretation suggests that genealogy is directed towards concrete
 objects of a twofold character. It particularly treats objects which
 simultaneously "frame and shape human action and self-understanding" (Saar 2008,
@@ -131,10 +88,7 @@ understanding genealogy as having a particular abstract object, the distinction
 must thus be maintained between this object—in this instance the relationship
 between historicity and subjectivation—and the object itself. In turning to
 further commentaries, one finds a similar structure.
-</p>
 
-
-<p>
 The latter commentators, though in nominal disagreement with Saar, refine the
 terms of the abstract object which he describes. Allen and Koopman in particular
 provide insights as to what distinguishes the character of the concrete
@@ -155,9 +109,7 @@ a refinement of Saar's abstract object. Genealogy thus directs itself towards
 producing knowledge of historicity insofar as this concrete historicity is
 supposed to be the foundation for making up an abstract subject, and in order to
 do so it demonstrates the contingency of which this historicity is made.
-</p>
 
-<p>
 This operative notion of contingency, on which these prominent interpretations
 depend (Allen 2018, 175–6; Koopman 2016, 99), is related to historicity insofar
 as it is the content of which historicity is made up. Because contingency
@@ -171,9 +123,7 @@ It is thus that one understands the presence of language of 'opening up,'
 their interpretation genealogical work renders historicity, therefore
 contingency, therefore possibility, known. However, here one encounters an
 impasse.
-</p>
 
-<p>
 If genealogy is an abstract procedure for producing knowledge about historicity
 and contingency, how can it be understood that genealogy is itself, in the words
 of a further interpreter, "possibilizing" (Lorenzini 2020)? The strongest
@@ -194,9 +144,7 @@ foundational level of the genealogical method such a distinction appears
 confused. Genealogy would need, if it is to intervene in the process of
 subjectivation, to produce actual possibility, to adjust the conditions which
 make up subjects by the knowledge which results from it.
-</p>
 
-<p>
 In this sense, the common interpretation of genealogy can be understood as a
 form of reinscribing its own conditions of existence. Because genealogical work
 is insistent that it makes historicized possibility and contingency actual but
@@ -209,9 +157,7 @@ possibility to something other than itself, something which is not knowledge but
 which is instead an object about which knowledge could be produced. Genealogy
 cannot produce this object, and because of its insistence that it can, it
 prevents exactly the production which it seeks.
-</p>
 
-<p>
 Genealogy, when thus seen as an abstract form of knowledge production about an
 abstract object which is itself the content of historicity—contingency qua
 possibility—insists that knowledge produces alterity; yet, because of the
@@ -222,7 +168,3 @@ however, that through it these things come into being, while at the same time
 only producing knowledge of them, it prevents exactly what it sets out to do.
 Genealogy thus functions as an ideological reproduction of its structural
 conditions of possibility.
-</p>
-			</header></article>
-		</main>
-</body></html>

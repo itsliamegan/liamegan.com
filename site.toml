@@ -1,0 +1,27 @@
+url = "https://liamegan.com"
+
+[assets]
+scripts = []
+styles = ["main", "home", "article"]
+
+[collections.writing]
+sort = "date"
+order = "desc"
+
+[[routes]]
+name = "home"
+path = "/"
+view = "home"
+item = "home"
+
+[[routes]]
+name = "writing/show"
+path = "/writing/{name}"
+view = "writing/show"
+collection = "writing"
+
+[[routes]]
+name = "drafts/show"
+path = "/drafts/{name}"
+view = "writing/show"
+collection = "drafts"

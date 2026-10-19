@@ -1,0 +1,13 @@
+[project]
+name = "website"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+	"eden"
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+eden = { git = "https://github.com/itsliamegan/eden", branch = "main" }
